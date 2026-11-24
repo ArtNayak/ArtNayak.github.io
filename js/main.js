@@ -61,6 +61,8 @@
     if (text) el.textContent = text;
   };
   setLink($('#resumeBtn'), L.resume);
+  setLink($('#resumeView'), L.resume);
+  setLink($('#resumeDl'), L.resume);
   setLink($('#ctaLinkedin'), L.linkedin);
   setLink($('#ctaGithub'), L.github);
   setLink($('#sayHello'), mailto);

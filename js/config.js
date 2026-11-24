@@ -93,41 +93,12 @@ window.SITE_CONFIG = Object.freeze({
      image: optional screenshot path like "assets/airportops.webp" (lazy-loaded). "" = no image. */
   projects: [
     {
-      type: "Research · In progress",
-      title: "WheatRust Detection",
-      description: "Deep-learning detection of wheat rust disease from satellite imagery, built toward a research paper. Uses archived Sentinel-1 SAR and Sentinel-2 optical data, retrospective and software-only.",
-      highlights: ["Retrospective validation against historical rust outbreak records is planned", "Aims to improve accuracy over the closest existing literature"],
-      tags: ["Python", "Deep Learning", "Sentinel-1", "Sentinel-2", "Remote Sensing"],
-      demo: "",
-      image: ""
-    },
-    {
       type: "LLM evaluation",
       title: "EvalGate",
       description: "A quality and safety evaluation harness for a RAG assistant, built to measure whether an LLM-backed system is good enough to ship.",
       highlights: ["Quality and safety checks for a retrieval-augmented assistant"], // >>> EDIT: add real details (metrics, test sets, results)
       tags: ["Python", "LLM", "RAG", "Evaluation"], // >>> EDIT: tags to match your stack
       repo: "https://github.com/ArtNayak/EvalGate",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Desktop app · In progress",
-      title: "Conductor",
-      description: "A local-first AI model orchestration desktop app for Mac, Linux and Windows. It scores each downloaded model on a CPU, then routes every prompt to the best one.",
-      highlights: ["Local-only and privacy-focused, built at zero cost", "C++/Qt 6 shell supervising a Python FastAPI backend"],
-      tags: ["C++", "Qt 6", "Python", "FastAPI", "Local LLMs"],
-      repo: "https://github.com/ArtNayak/conductor",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Reinforcement learning · Hackathon",
-      title: "AirportOps",
-      description: "An OpenEnv-compliant RL environment where an agent dispatches runways, gates and emergency units across progressively harder tasks. Built for the Meta × PyTorch × Hugging Face Hackathon.",
-      highlights: ["Graders and scenario files for tasks of rising difficulty", "Containerised with Docker, served through FastAPI"],
-      tags: ["Python", "FastAPI", "Docker", "OpenAI API"],
-      repo: "https://github.com/ArtNayak/Airport_Ops",
       demo: "",
       image: ""
     },
@@ -142,36 +113,6 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Data & ML platform",
-      title: "GeoVision AI",
-      description: "A global environmental intelligence platform that fuses satellite, climate, precipitation and air-quality data into a single Environmental Health Index.",
-      highlights: ["8-stage pipeline from ingestion to alerting, 13-region registry", "Random Forest / XGBoost plus CNN, LSTM and Transformer forecasting"],
-      tags: ["Python", "FastAPI", "PyTorch", "Sentinel-2", "JavaScript"],
-      repo: "https://github.com/ArtNayak/GeoVision-AI",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Agentic AI · Full-stack",
-      title: "FinWise AI",
-      description: "A conversational retirement planning assistant that gathers a user's financial details and generates a personalised plan and investment suggestions.",
-      highlights: ["Dialogue flow designed in BotPress", "MongoDB-backed data layer, OpenAI API for plan generation"],
-      tags: ["React", "Node.js", "MongoDB", "OpenAI API"],
-      repo: "https://github.com/ArtNayak/FinWise-AI",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Remote sensing · ML",
-      title: "Satellite Crop Yield Prediction",
-      description: "A precision-agriculture system that extracts vegetation indices from multispectral imagery and estimates yield variability across fields.",
-      highlights: ["NDVI, EVI and NDWI features from Google Earth Engine", "Random Forest regression with productivity maps"],
-      tags: ["Python", "Scikit-learn", "Earth Engine"],
-      repo: "https://github.com/ArtNayak/Satellite-Crop-Yield-Prediction",
-      demo: "",
-      image: ""
-    },
-    {
       type: "Full-stack · Spring Boot",
       title: "RouteX",
       description: "An online bus booking system with search by route and date, an interactive seat map and an admin dashboard. Designed from my own IEEE-format SRS.",
@@ -182,52 +123,32 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Data structures · REST API",
-      title: "NexBank",
-      description: "A bank account management system that applies OOP and data structures: inheritance for account types, a stack for undo, a queue for service requests, merge sort for rankings.",
-      highlights: ["Dark-themed vanilla JS frontend", "Node + Express API with JWT, helmet and rate limiting"],
-      tags: ["JavaScript", "Node.js", "Express"],
-      repo: "https://github.com/ArtNayak/NexBank",
+      type: "Data & ML platform",
+      title: "GeoVision AI",
+      description: "A global environmental intelligence platform that fuses satellite, climate, precipitation and air-quality data into a single Environmental Health Index.",
+      highlights: ["8-stage pipeline from ingestion to alerting, 13-region registry", "Random Forest / XGBoost plus CNN, LSTM and Transformer forecasting"],
+      tags: ["Python", "FastAPI", "PyTorch", "Sentinel-2", "JavaScript"],
+      repo: "https://github.com/ArtNayak/GeoVision-AI",
       demo: "",
       image: ""
     },
     {
-      type: "NLP · Web app",
-      title: "Sentiment Analysis System",
-      description: "An NLP app that combines a RoBERTa classifier with VADER lexicon scoring and shows confidence scores in an interactive interface.",
-      highlights: ["Hybrid model + lexicon scoring", "Deployed as a Streamlit app"],
-      tags: ["Python", "PyTorch", "RoBERTa", "Streamlit"],
-      repo: "https://github.com/ArtNayak/Sentiment-Analysis-System",
+      type: "Reinforcement learning · Hackathon",
+      title: "AirportOps",
+      description: "An OpenEnv-compliant RL environment where an agent dispatches runways, gates and emergency units across progressively harder tasks. Built for the Meta × PyTorch × Hugging Face Hackathon.",
+      highlights: ["Graders and scenario files for tasks of rising difficulty", "Containerised with Docker, served through FastAPI"],
+      tags: ["Python", "FastAPI", "Docker", "OpenAI API"],
+      repo: "https://github.com/ArtNayak/Airport_Ops",
       demo: "",
       image: ""
     },
     {
-      type: "IoT · Hardware",
-      title: "Smart Soil Monitoring & Recommendation System",
-      description: "An IoT system that monitors soil conditions and gives agricultural recommendations from sensor readings.",
-      highlights: ["Monitors soil nutrients, temperature and humidity", "Hardware: Arduino Uno, DHT11, NPK sensor, nRF24L01, MAX485"],
-      tags: ["Arduino", "IoT", "NPK Sensor", "nRF24L01"],
-      repo: "https://github.com/ArtNayak/Smart-Soil-Monitoring-Recommendation-System",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Computer vision",
-      title: "Plant Disease Classification",
-      description: "A deep-learning project that classifies plant leaves as Healthy, Powdery or Rust, using the Kaggle Plant Disease Recognition dataset.",
-      highlights: ["Custom CNN built in TensorFlow/Keras", "Comparison of EfficientNet-B6 and MobileNetV2 was planned"],
-      tags: ["Python", "TensorFlow", "Keras", "CNN"],
-      repo: "https://github.com/ArtNayak/Plant-Disease-Classification",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Deep learning",
-      title: "ECG Classification System",
-      description: "A deep-learning project classifying ECG signals, trained on a Kaggle dataset.",
-      highlights: ["Focus on ECG signal classification", "Developed on Google Colab"],
-      tags: ["Python", "Deep Learning", "Google Colab"],
-      repo: "https://github.com/ArtNayak/ECG-Classification-System",
+      type: "Desktop app · In progress",
+      title: "Conductor",
+      description: "A local-first AI model orchestration desktop app for Mac, Linux and Windows. It scores each downloaded model on a CPU, then routes every prompt to the best one.",
+      highlights: ["Local-only and privacy-focused, built at zero cost", "C++/Qt 6 shell supervising a Python FastAPI backend"],
+      tags: ["C++", "Qt 6", "Python", "FastAPI", "Local LLMs"],
+      repo: "https://github.com/ArtNayak/conductor",
       demo: "",
       image: ""
     },
@@ -242,22 +163,12 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Web app",
-      title: "Pizza Delivery Application",
-      description: "A web application for managing pizza orders and delivery workflows.",
-      highlights: ["Custom pizza builder with live pricing, cart, checkout and order tracking", "Admin dashboard with inventory that reserves stock per order and flags low stock"],
-      tags: ["React Router", "Hono", "PostgreSQL", "Tailwind CSS", "Expo"],
-      repo: "https://github.com/ArtNayak/Pizza-Delivery-Application",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Java · Desktop",
-      title: "Hospital Management System",
-      description: "A Java desktop application for managing hospital information and operations: patient registration, appointments and billing.",
-      highlights: ["OOP design with a normalised MySQL schema via JDBC"],
-      tags: ["Java", "MySQL", "JDBC", "NetBeans"],
-      repo: "https://github.com/ArtNayak/Hospital-Management-System",
+      type: "Remote sensing · ML",
+      title: "Satellite Crop Yield Prediction",
+      description: "A precision-agriculture system that extracts vegetation indices from multispectral imagery and estimates yield variability across fields.",
+      highlights: ["NDVI, EVI and NDWI features from Google Earth Engine", "Random Forest regression with productivity maps"],
+      tags: ["Python", "Scikit-learn", "Earth Engine"],
+      repo: "https://github.com/ArtNayak/Satellite-Crop-Yield-Prediction",
       demo: "",
       image: ""
     },
@@ -282,12 +193,81 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Python · CLI",
-      title: "Library Management System",
-      description: "A command-line library system with Admin, Librarian and Member roles for managing books, members and loans.",
-      highlights: ["Book issue and return with loan dates", "bcrypt-hashed passwords, JSON file storage"],
-      tags: ["Python", "bcrypt", "JSON"],
-      repo: "https://github.com/ArtNayak/Library-Management-System",
+      type: "Computer vision",
+      title: "Plant Disease Classification",
+      description: "A deep-learning project that classifies plant leaves as Healthy, Powdery or Rust, using the Kaggle Plant Disease Recognition dataset.",
+      highlights: ["Custom CNN built in TensorFlow/Keras", "Comparison of EfficientNet-B6 and MobileNetV2 was planned"],
+      tags: ["Python", "TensorFlow", "Keras", "CNN"],
+      repo: "https://github.com/ArtNayak/Plant-Disease-Classification",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "NLP · Web app",
+      title: "Sentiment Analysis System",
+      description: "An NLP app that combines a RoBERTa classifier with VADER lexicon scoring and shows confidence scores in an interactive interface.",
+      highlights: ["Hybrid model + lexicon scoring", "Deployed as a Streamlit app"],
+      tags: ["Python", "PyTorch", "RoBERTa", "Streamlit"],
+      repo: "https://github.com/ArtNayak/Sentiment-Analysis-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Agentic AI · Full-stack",
+      title: "FinWise AI",
+      description: "A conversational retirement planning assistant that gathers a user's financial details and generates a personalised plan and investment suggestions.",
+      highlights: ["Dialogue flow designed in BotPress", "MongoDB-backed data layer, OpenAI API for plan generation"],
+      tags: ["React", "Node.js", "MongoDB", "OpenAI API"],
+      repo: "https://github.com/ArtNayak/FinWise-AI",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Research · In progress",
+      title: "WheatRust Detection",
+      description: "Deep-learning detection of wheat rust disease from satellite imagery, built toward a research paper. Uses archived Sentinel-1 SAR and Sentinel-2 optical data, retrospective and software-only.",
+      highlights: ["Retrospective validation against historical rust outbreak records is planned", "Aims to improve accuracy over the closest existing literature"],
+      tags: ["Python", "Deep Learning", "Sentinel-1", "Sentinel-2", "Remote Sensing"],
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Deep learning",
+      title: "ECG Classification System",
+      description: "A deep-learning project classifying ECG signals, trained on a Kaggle dataset.",
+      highlights: ["Focus on ECG signal classification", "Developed on Google Colab"],
+      tags: ["Python", "Deep Learning", "Google Colab"],
+      repo: "https://github.com/ArtNayak/ECG-Classification-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Data structures · REST API",
+      title: "NexBank",
+      description: "A bank account management system that applies OOP and data structures: inheritance for account types, a stack for undo, a queue for service requests, merge sort for rankings.",
+      highlights: ["Dark-themed vanilla JS frontend", "Node + Express API with JWT, helmet and rate limiting"],
+      tags: ["JavaScript", "Node.js", "Express"],
+      repo: "https://github.com/ArtNayak/NexBank",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "IoT · Hardware",
+      title: "Smart Soil Monitoring & Recommendation System",
+      description: "An IoT system that monitors soil conditions and gives agricultural recommendations from sensor readings.",
+      highlights: ["Monitors soil nutrients, temperature and humidity", "Hardware: Arduino Uno, DHT11, NPK sensor, nRF24L01, MAX485"],
+      tags: ["Arduino", "IoT", "NPK Sensor", "nRF24L01"],
+      repo: "https://github.com/ArtNayak/Smart-Soil-Monitoring-Recommendation-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Web app",
+      title: "Pizza Delivery Application",
+      description: "A web application for managing pizza orders and delivery workflows.",
+      highlights: ["Custom pizza builder with live pricing, cart, checkout and order tracking", "Admin dashboard with inventory that reserves stock per order and flags low stock"],
+      tags: ["React Router", "Hono", "PostgreSQL", "Tailwind CSS", "Expo"],
+      repo: "https://github.com/ArtNayak/Pizza-Delivery-Application",
       demo: "",
       image: ""
     },
@@ -302,12 +282,32 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "C · Console",
-      title: "Cricket Score Management System",
-      description: "A C console program for recording and managing the scores of a two-team cricket match, with scorecards and a match result.",
-      highlights: ["Cricket-notation overs (3.4) for exact economy rates, validated input throughout", "Update any batsman, bowler or extras after entry"],
-      tags: ["C"],
-      repo: "https://github.com/ArtNayak/Cricket-Score-Management-System",
+      type: "Java · Desktop",
+      title: "Hospital Management System",
+      description: "A Java desktop application for managing hospital information and operations: patient registration, appointments and billing.",
+      highlights: ["OOP design with a normalised MySQL schema via JDBC"],
+      tags: ["Java", "MySQL", "JDBC", "NetBeans"],
+      repo: "https://github.com/ArtNayak/Hospital-Management-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Python · CLI",
+      title: "Library Management System",
+      description: "A command-line library system with Admin, Librarian and Member roles for managing books, members and loans.",
+      highlights: ["Book issue and return with loan dates", "bcrypt-hashed passwords, JSON file storage"],
+      tags: ["Python", "bcrypt", "JSON"],
+      repo: "https://github.com/ArtNayak/Library-Management-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Web app · React",
+      title: "Quiz App",
+      description: "A multiple-choice quiz built with React Hooks, with categories and a timer per question.",
+      highlights: ["Pick HTML & CSS, JavaScript, React or all categories; 15 seconds per question", "Best score per category saved in the browser with localStorage"],
+      tags: ["React", "JavaScript", "Vite"],
+      repo: "https://github.com/ArtNayak/Quiz-App-IP",
       demo: "",
       image: ""
     },
@@ -322,12 +322,12 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Web app · React",
-      title: "Quiz App",
-      description: "A multiple-choice quiz built with React Hooks, with categories and a timer per question.",
-      highlights: ["Pick HTML & CSS, JavaScript, React or all categories; 15 seconds per question", "Best score per category saved in the browser with localStorage"],
-      tags: ["React", "JavaScript", "Vite"],
-      repo: "https://github.com/ArtNayak/Quiz-App-IP",
+      type: "C · Console",
+      title: "Cricket Score Management System",
+      description: "A C console program for recording and managing the scores of a two-team cricket match, with scorecards and a match result.",
+      highlights: ["Cricket-notation overs (3.4) for exact economy rates, validated input throughout", "Update any batsman, bowler or extras after entry"],
+      tags: ["C"],
+      repo: "https://github.com/ArtNayak/Cricket-Score-Management-System",
       demo: "",
       image: ""
     }
