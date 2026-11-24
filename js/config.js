@@ -203,11 +203,11 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "NLP · Web app",
-      title: "Sentiment Analysis System",
-      description: "An NLP app that combines a RoBERTa classifier with VADER lexicon scoring and shows confidence scores in an interactive interface.",
-      highlights: ["Hybrid model + lexicon scoring", "Deployed as a Streamlit app"],
-      tags: ["Python", "PyTorch", "RoBERTa", "Streamlit"],
+      type: "NLP · Hackathon",
+      title: "E-Consultation Suite (Sentiment Analysis)",
+      description: "A Smart India Hackathon app that analyses public feedback: it scores comments with a RoBERTa sentiment model, summarises long text and pulls out key themes.",
+      highlights: ["RoBERTa sentiment scoring with VADER lexicon, DistilBART summaries and a word cloud", "Playwright URL scraper hardened against SSRF and DNS rebinding, plus a rule-based spam filter"],
+      tags: ["Python", "Streamlit", "RoBERTa", "DistilBART", "Playwright"],
       repo: "https://github.com/ArtNayak/Sentiment-Analysis-System",
       demo: "",
       image: ""
