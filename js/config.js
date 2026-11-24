@@ -32,7 +32,7 @@ window.SITE_CONFIG = Object.freeze({
     github: "https://github.com/ArtNayak",
     linkedin: "https://www.linkedin.com/in/atharva-nayak",
     hackerrank: "https://www.hackerrank.com/profile/arnayak025",
-    resume: "" // e.g. "assets/resume.pdf"  (put the PDF in the assets/ folder)
+    resume: "assets/resume.pdf"
   },
 
   // Optional: live "Latest on GitHub" section (calls GitHub's public API once per 10 min, cached).
@@ -304,18 +304,28 @@ window.SITE_CONFIG = Object.freeze({
     {
       type: "C · Console",
       title: "Cricket Score Management System",
-      description: "A C-based application for recording and managing cricket match scores.",
-      highlights: [], // >>> EDIT
+      description: "A C console program for recording and managing the scores of a two-team cricket match, with scorecards and a match result.",
+      highlights: ["Cricket-notation overs (3.4) for exact economy rates, validated input throughout", "Update any batsman, bowler or extras after entry"],
       tags: ["C"],
-      repo: "", // >>> PASTE
+      repo: "https://github.com/ArtNayak/Cricket-Score-Management-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Web · HTML & CSS",
+      title: "Little Lemon Restaurant Website",
+      description: "A multi-page static website for a fictional Mediterranean restaurant, with home, menu, table booking and about pages.",
+      highlights: ["Built with plain HTML and CSS, one stylesheet per page", "Booking form page and a menu page"],
+      tags: ["HTML5", "CSS3"],
+      repo: "https://github.com/ArtNayak/Restaurant-Website",
       demo: "",
       image: ""
     },
     {
       type: "Web app · React",
       title: "Quiz App",
-      description: "A quiz application built with React Hooks.",
-      highlights: [], // >>> EDIT
+      description: "A multiple-choice quiz built with React Hooks, with categories and a timer per question.",
+      highlights: ["Pick HTML & CSS, JavaScript, React or all categories; 15 seconds per question", "Best score per category saved in the browser with localStorage"],
       tags: ["React", "JavaScript", "Vite"],
       repo: "https://github.com/ArtNayak/Quiz-App-IP",
       demo: "",
@@ -344,7 +354,7 @@ window.SITE_CONFIG = Object.freeze({
   // Count-up numbers. value is a number; decimals/prefix/suffix are optional.
   stats: [
     { value: 9.14, decimals: 2, label: "CGPA (out of 10)" },
-    { value: 23, label: "Projects built" },
+    { value: 24, label: "Projects built" },
     { value: 4, label: "Certifications" },
     { value: 2, label: "Internships" },
     { value: 1, label: "Hackathon final round" }
