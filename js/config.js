@@ -93,12 +93,41 @@ window.SITE_CONFIG = Object.freeze({
      image: optional screenshot path like "assets/airportops.webp" (lazy-loaded). "" = no image. */
   projects: [
     {
+      type: "Research · In progress",
+      title: "WheatRust Detection",
+      description: "Deep-learning detection of wheat rust disease from satellite imagery, built toward a research paper. Uses archived Sentinel-1 SAR and Sentinel-2 optical data, retrospective and software-only.",
+      highlights: ["Retrospective validation against historical rust outbreak records is planned", "Aims to improve accuracy over the closest existing literature"],
+      tags: ["Python", "Deep Learning", "Sentinel-1", "Sentinel-2", "Remote Sensing"],
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Desktop app · In progress",
+      title: "Conductor",
+      description: "A local-first AI model orchestration desktop app for Mac, Linux and Windows. It scores each downloaded model on a CPU, then routes every prompt to the best one.",
+      highlights: ["Local-only and privacy-focused, built at zero cost", "C++/Qt 6 shell supervising a Python FastAPI backend"],
+      tags: ["C++", "Qt 6", "Python", "FastAPI", "Local LLMs"],
+      repo: "https://github.com/ArtNayak/conductor",
+      demo: "",
+      image: ""
+    },
+    {
       type: "LLM evaluation",
       title: "EvalGate",
       description: "A quality and safety evaluation harness for a RAG assistant, built to measure whether an LLM-backed system is good enough to ship.",
       highlights: ["Quality and safety checks for a retrieval-augmented assistant"], // >>> EDIT: add real details (metrics, test sets, results)
       tags: ["Python", "LLM", "RAG", "Evaluation"], // >>> EDIT: tags to match your stack
       repo: "https://github.com/ArtNayak/EvalGate",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Reinforcement learning · Hackathon",
+      title: "AirportOps",
+      description: "An OpenEnv-compliant RL environment where an agent dispatches runways, gates and emergency units across progressively harder tasks. Built for the Meta × PyTorch × Hugging Face Hackathon.",
+      highlights: ["Graders and scenario files for tasks of rising difficulty", "Containerised with Docker, served through FastAPI"],
+      tags: ["Python", "FastAPI", "Docker", "OpenAI API"],
+      repo: "https://github.com/ArtNayak/Airport_Ops",
       demo: "",
       image: ""
     },
@@ -129,26 +158,6 @@ window.SITE_CONFIG = Object.freeze({
       highlights: ["8-stage pipeline from ingestion to alerting, 13-region registry", "Random Forest / XGBoost plus CNN, LSTM and Transformer forecasting"],
       tags: ["Python", "FastAPI", "PyTorch", "Sentinel-2", "JavaScript"],
       repo: "https://github.com/ArtNayak/GeoVision-AI",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Reinforcement learning · Hackathon",
-      title: "AirportOps",
-      description: "An OpenEnv-compliant RL environment where an agent dispatches runways, gates and emergency units across progressively harder tasks. Built for the Meta × PyTorch × Hugging Face Hackathon.",
-      highlights: ["Graders and scenario files for tasks of rising difficulty", "Containerised with Docker, served through FastAPI"],
-      tags: ["Python", "FastAPI", "Docker", "OpenAI API"],
-      repo: "https://github.com/ArtNayak/Airport_Ops",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Desktop app · In progress",
-      title: "Conductor",
-      description: "A local-first AI model orchestration desktop app for Mac, Linux and Windows. It scores each downloaded model on a CPU, then routes every prompt to the best one.",
-      highlights: ["Local-only and privacy-focused, built at zero cost", "C++/Qt 6 shell supervising a Python FastAPI backend"],
-      tags: ["C++", "Qt 6", "Python", "FastAPI", "Local LLMs"],
-      repo: "https://github.com/ArtNayak/conductor",
       demo: "",
       image: ""
     },
@@ -204,7 +213,7 @@ window.SITE_CONFIG = Object.freeze({
     },
     {
       type: "NLP · Hackathon",
-      title: "E-Consultation Suite (Sentiment Analysis)",
+      title: "Sentiment Analysis System",
       description: "A Smart India Hackathon app that analyses public feedback: it scores comments with a RoBERTa sentiment model, summarises long text and pulls out key themes.",
       highlights: ["RoBERTa sentiment scoring with VADER lexicon, DistilBART summaries and a word cloud", "Playwright URL scraper hardened against SSRF and DNS rebinding, plus a rule-based spam filter"],
       tags: ["Python", "Streamlit", "RoBERTa", "DistilBART", "Playwright"],
@@ -219,15 +228,6 @@ window.SITE_CONFIG = Object.freeze({
       highlights: ["Dialogue flow designed in BotPress", "MongoDB-backed data layer, OpenAI API for plan generation"],
       tags: ["React", "Node.js", "MongoDB", "OpenAI API"],
       repo: "https://github.com/ArtNayak/FinWise-AI",
-      demo: "",
-      image: ""
-    },
-    {
-      type: "Research · In progress",
-      title: "WheatRust Detection",
-      description: "Deep-learning detection of wheat rust disease from satellite imagery, built toward a research paper. Uses archived Sentinel-1 SAR and Sentinel-2 optical data, retrospective and software-only.",
-      highlights: ["Retrospective validation against historical rust outbreak records is planned", "Aims to improve accuracy over the closest existing literature"],
-      tags: ["Python", "Deep Learning", "Sentinel-1", "Sentinel-2", "Remote Sensing"],
       demo: "",
       image: ""
     },
