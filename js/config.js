@@ -232,11 +232,11 @@ window.SITE_CONFIG = Object.freeze({
       image: ""
     },
     {
-      type: "Backend",
+      type: "Full-stack · REST API",
       title: "Newsletter Management System",
-      description: "A backend application for managing newsletter subscriptions and sending newsletters.",
-      highlights: [], // >>> EDIT: add 1-2 highlights
-      tags: ["Backend"], // >>> EDIT: add your stack
+      description: "A faculty newsletter app: faculty publish newsletters, readers search them and subscribe by email. Express and MongoDB API with a React frontend.",
+      highlights: ["JWT auth, invite-code faculty registration, Joi / express-validator input checks", "Swagger API docs, Jest + Supertest tests and Nodemailer email delivery"],
+      tags: ["Node.js", "Express", "MongoDB", "React", "Tailwind CSS", "JWT"],
       repo: "https://github.com/ArtNayak/NewlettersProject",
       demo: "",
       image: ""
@@ -245,8 +245,8 @@ window.SITE_CONFIG = Object.freeze({
       type: "Web app",
       title: "Pizza Delivery Application",
       description: "A web application for managing pizza orders and delivery workflows.",
-      highlights: [], // >>> EDIT: add 1-2 highlights
-      tags: ["Web app"], // >>> EDIT: add your stack
+      highlights: ["Custom pizza builder with live pricing, cart, checkout and order tracking", "Admin dashboard with inventory that reserves stock per order and flags low stock"],
+      tags: ["React Router", "Hono", "PostgreSQL", "Tailwind CSS", "Expo"],
       repo: "https://github.com/ArtNayak/Pizza-Delivery-Application",
       demo: "",
       image: ""
@@ -258,6 +258,46 @@ window.SITE_CONFIG = Object.freeze({
       highlights: ["OOP design with a normalised MySQL schema via JDBC"],
       tags: ["Java", "MySQL", "JDBC", "NetBeans"],
       repo: "https://github.com/ArtNayak/Hospital-Management-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "ML · Forecasting dashboard",
+      title: "Sales Prediction Model",
+      description: "Forecasts the next six months of sales from real company data and plots actual against predicted sales on a web dashboard.",
+      highlights: ["XGBoost and linear-trend ensemble; 3-month backtest error 4.99% vs 6.18% for XGBoost alone", "Flask API with a Chart.js frontend"],
+      tags: ["Python", "XGBoost", "Flask", "Chart.js"],
+      repo: "https://github.com/ArtNayak/Sales-Prediction-Model",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Deep learning · Capstone",
+      title: "Handwritten Digit Recognition",
+      description: "A deep-learning capstone comparing an MLP, a CNN and a fine-tuned ResNet18 on MNIST and EMNIST.",
+      highlights: ["Dropout and L2 regularisation on the baselines", "Single CLI trainer, per-class metrics and a generated results dashboard"],
+      tags: ["Python", "PyTorch", "CNN", "ResNet18", "Scikit-learn"],
+      repo: "https://github.com/ArtNayak/Handwritten-Digit-Recognition",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Python · CLI",
+      title: "Library Management System",
+      description: "A command-line library system with Admin, Librarian and Member roles for managing books, members and loans.",
+      highlights: ["Book issue and return with loan dates", "bcrypt-hashed passwords, JSON file storage"],
+      tags: ["Python", "bcrypt", "JSON"],
+      repo: "https://github.com/ArtNayak/Library-Management-System",
+      demo: "",
+      image: ""
+    },
+    {
+      type: "Python · CLI",
+      title: "Tuition & Coaching Management System",
+      description: "A command-line system for running a tuition centre, with Administrator, Trainer, Lecturer and Student roles covering modules, enrolment, invoices and payments.",
+      highlights: ["Salted PBKDF2 password hashes, standard library only", "End-to-end smoke test against a temporary database"],
+      tags: ["Python", "PBKDF2", "JSON"],
+      repo: "https://github.com/ArtNayak/Tuition-Coaching-Management-System",
       demo: "",
       image: ""
     },
@@ -304,7 +344,7 @@ window.SITE_CONFIG = Object.freeze({
   // Count-up numbers. value is a number; decimals/prefix/suffix are optional.
   stats: [
     { value: 9.14, decimals: 2, label: "CGPA (out of 10)" },
-    { value: 19, label: "Projects built" },
+    { value: 23, label: "Projects built" },
     { value: 4, label: "Certifications" },
     { value: 2, label: "Internships" },
     { value: 1, label: "Hackathon final round" }
